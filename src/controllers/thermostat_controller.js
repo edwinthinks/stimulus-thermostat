@@ -11,6 +11,19 @@ export default class extends Controller {
     this.temperatureTarget.textContent = this.temperature + "°";
   }
 
+  updateTemperatureColorDisplay() {
+    if (this.temperature > 90) {
+      this.temperatureTarget.classList.toggle("hot", true);
+      this.temperatureTarget.classList.toggle("cold", false);
+    } else if (this.temperature < 70) {
+      this.temperatureTarget.classList.toggle("hot", false);
+      this.temperatureTarget.classList.toggle("cold", true);
+    } else {
+      this.temperatureTarget.classList.toggle("hot", false);
+      this.temperatureTarget.classList.toggle("cold", false);
+    }
+  }
+
   increase() {
     this.temperature++;
   }
@@ -21,7 +34,7 @@ export default class extends Controller {
 
   get temperature() {
     if (!this.data.has("temperature")) {
-      this.temperature = "70";
+      this.temperature = this.defaultTemperature;
     }
 
     return parseInt(this.data.get("temperature"));
@@ -30,6 +43,12 @@ export default class extends Controller {
   set temperature(value) {
     this.data.set("temperature", value);
     this.showCurrentTemperature();
+    this.updateTemperatureColorDisplay();
   }
+
+  get defaultTemperature() {
+    return "75";
+  }
+
 
 }

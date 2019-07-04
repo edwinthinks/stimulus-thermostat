@@ -1,0 +1,11 @@
+.thermostat-temperature {
+  font-size: 100px;
+}
+
+.thermostat-temperature.hot {
+  color: red;
+}
+
+.thermostat-temperature.cold {
+  color: blue;
+}
