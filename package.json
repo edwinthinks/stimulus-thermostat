@@ -1,0 +1,22 @@
+{
+  "name": "stimulus-thermostat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "express": "^4.17.0",
+    "stimulus": "^1.1.1",
+    "webpack": "^4.32.2",
+    "webpack-dev-middleware": "^3.7.0"
+  }
+}
