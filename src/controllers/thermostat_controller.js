@@ -1,6 +1,6 @@
 import { Controller } from "stimulus";
 
-export default class extends Controller {
+class ThermostatController extends Controller {
   static targets = [ "temperature" ];
 
   connect() {
@@ -50,5 +50,6 @@ export default class extends Controller {
     return "75";
   }
 
-
 }
+
+export { ThermostatController }
