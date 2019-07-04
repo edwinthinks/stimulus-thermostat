@@ -1,7 +1,6 @@
 import {Application} from 'stimulus';
 import {ThermostatController} from '../src/controllers/thermostat_controller.js';
 
-
 describe('ThermostatController', () => {
   let defaultTemperature = 80;
   let thermostatContainer;
@@ -28,7 +27,7 @@ describe('ThermostatController', () => {
   })
 
   test('renders the default temperature', () => {
-    expect(temperatureDisplay.textContent).toBe(`${defaultTemperature}°`)
+    expect(temperatureDisplay.textContent).toBe(`${defaultTemperature}°`);
   })
 
   test('increases the temperature value when increase button is clicked', () => {

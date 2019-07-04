@@ -52,4 +52,4 @@ class ThermostatController extends Controller {
 
 }
 
-export { ThermostatController }
+export { ThermostatController };
