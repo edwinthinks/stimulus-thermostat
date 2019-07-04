@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "./node_modules/.bin/webpack",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +19,8 @@
     "stimulus": "^1.1.1",
     "webpack": "^4.32.2",
     "webpack-dev-middleware": "^3.7.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.5"
   }
 }
