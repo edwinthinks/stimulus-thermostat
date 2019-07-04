@@ -1,5 +1,6 @@
-import { Application } from "stimulus"
+require('./styles/base.scss');
 
+import { Application } from "stimulus"
 import { ThermostatController } from "./controllers/thermostat_controller"
 
 const application = Application.start()

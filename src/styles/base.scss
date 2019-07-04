@@ -1,0 +1,15 @@
+@charset "utf-8";
+@import "~bulma/bulma";
+
+.thermostat-temperature {
+  font-size: 120px;
+  margin-left: 16px;
+
+  &.hot {
+    color: hsl(348, 100%, 61%);
+  }
+
+  &.cold {
+    color: hsl(217, 71%, 53%);
+  }
+}
