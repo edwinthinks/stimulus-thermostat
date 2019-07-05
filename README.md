@@ -4,7 +4,7 @@
 A toy Thermostat static web application that demonstrates using [StimulusJS](https://stimulusjs.org/). Built for the purposes of learning how to apply Stimulus in applicable scenarios were 'sprinkling' is suitable.
 
 A quick video snippet demo
-[Demo video of thermostat](demo.gif)
+![Demo video of thermostat](demo.gif)
 
 You can try out the application here: [https://stimulus-thermostat.netlify.com/](https://stimulus-thermostat.netlify.com/)
 
